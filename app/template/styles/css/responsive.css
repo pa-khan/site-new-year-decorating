@@ -1,0 +1,79 @@
+@media screen and (max-width: 1199px) {
+  body {
+    font-size: 16px; }
+  .container {
+    width: 950px; }
+  .panel__logo img {
+    width: 300px; }
+  .panel__phone {
+    font-size: 20px;
+    margin-right: 90px;
+    top: 16px; }
+    .panel__phone span {
+      font-size: 26px; }
+  .panel__button {
+    width: 250px; }
+  .panel__nav li {
+    margin-right: 20px; }
+  .header__text {
+    font-size: 27px; }
+  .header, .share {
+    overflow: hidden; }
+  .input {
+    line-height: 60px;
+    width: 270px; }
+  .button {
+    line-height: 60px;
+    border-bottom-width: 4px; }
+  .title {
+    font-size: 40px; }
+    .title:before {
+      display: none; }
+  .what__image:before {
+    width: 200px;
+    height: 200px; }
+  .what__image img {
+    width: 200px; }
+  .what__text {
+    font-size: 20px; }
+  .what__desc {
+    font-size: 25px; }
+  .portfolio__list:before, .portfolio__list:after {
+    width: 100%;
+    margin-left: 0;
+    left: 0; }
+  .share {
+    background-size: cover;
+    padding-bottom: 50px; }
+    .share__left {
+      padding-top: 100px;
+      width: 260px; }
+    .share__desc {
+      font-size: 24px; }
+      .share__desc span {
+        font-size: 30px; }
+    .share__right {
+      padding-right: 0;
+      width: 590px; }
+    .share__form {
+      margin-top: 30px; }
+  .reviews__image {
+    padding-left: 0;
+    width: 250px;
+    height: 250px; }
+    .reviews__image img {
+      width: 100%; }
+    .reviews__image:before {
+      display: none; }
+  .reviews__content {
+    margin-left: 30px;
+    padding-top: 15px; }
+  .reviews__name {
+    font-size: 18px;
+    margin-top: 15px; }
+  .reviews .slick-next {
+    top: 47%; }
+  .contacts__wrap {
+    margin-right: -440px; }
+  .popup .input {
+    width: 100%; } }

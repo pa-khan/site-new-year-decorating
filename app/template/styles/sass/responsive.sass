@@ -1,3 +1,98 @@
-// @media screen and (max-width: 1199px)
-// 	.container
-// 		width: 950px
+@media screen and (max-width: 1199px)
+	body
+		font-size: 16px
+	.container
+		width: 950px
+	.panel
+		&__logo
+			img
+				width: 300px
+		&__phone
+			font-size: 20px
+			margin-right: 90px
+			top: 16px
+			span
+				font-size: 26px
+		&__button
+			width: 250px
+		&__nav
+			li
+				margin-right: 20px
+	.header
+		&__text
+			font-size: 27px
+	.header, .share
+		overflow: hidden
+	.input
+		line-height: 60px
+		width: 270px
+	.button
+		line-height: 60px
+		border-bottom-width: 4px
+	.title
+		font-size: 40px
+		&:before
+			display: none
+	.what
+		&__image
+			&:before
+				width: 200px
+				height: 200px
+			img
+				width: 200px
+		&__text
+			font-size: 20px
+		&__desc
+			font-size: 25px
+
+	.portfolio
+		&__list
+			&:before, &:after
+				width: 100%
+				margin-left: 0
+				left: 0
+	.share
+		background-size: cover
+		padding-bottom: 50px
+		&__left
+			padding-top: 100px
+			width: 260px
+		&__desc
+			font-size: 24px
+			span
+				font-size: 30px
+		&__right
+			padding-right: 0
+			width: 590px
+		&__form
+			margin-top: 30px
+		
+
+	.reviews
+		&__image
+			padding-left: 0
+			width: 250px
+			height: 250px
+			img
+				width: 100%
+			&:before
+				display: none
+
+		&__content
+			margin-left: 30px
+			padding-top: 15px
+
+		&__name
+			font-size: 18px
+			margin-top: 15px
+
+		.slick-next
+			top: 47%
+
+	.contacts
+		&__wrap
+			margin-right: -440px
+
+	.popup
+		.input
+			width: 100%
