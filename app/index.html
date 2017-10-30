@@ -30,7 +30,16 @@
 			</script>
 	<![endif]-->
 </head>
-<body>
+<body id="main">
+
+<div class="popup popup_order" id="popup-order">
+	<div class="popup__title">Заказ обратно звонка</div>
+	<div class="popup__form form fz0">
+		<input type="text" class="form__input input" placeholder="Ваше имя">
+		<input type="text" class="form__input input input_phone" placeholder="+7 (   )">
+		<button class="form__button button button_blue">Вызвать дизайнера</button>
+	</div>
+</div>
 
 <div class="panel">
 	<div class="container">
@@ -38,32 +47,32 @@
 			<div class="panel__logo col"><img src="upload/logo.png" alt=""></div>
 			<div class="panel__contacts col right">
 				<div class="panel__phone"><a href="">+7-499-<span>390-72-75</span></a></div>
-				<a class="panel__button button"><img src="upload/phone.png" alt=""><span>Заказать звонок</span></a>
+				<a data-fancybox data-src="#popup-order" href="javascript:;"class="panel__button button"><img src="upload/phone.png" alt=""><span>Заказать звонок</span></a>
 			</div>
 		</div>
 		<div class="panel__nav">
 			<ul>
-				<li><a href="">Главная</a></li>
-				<li><a href="">наши работы</a></li>
-				<li><a href="">бесплатный замер</a></li>
-				<li><a href="">Отзывы</a></li>
-				<li><a href="">контакты</a></li>
+				<li><a href="#main">Главная</a></li>
+				<li><a href="#portfolio">наши работы</a></li>
+				<li><a href="#share">бесплатный замер</a></li>
+				<li><a href="#reviews">Отзывы</a></li>
+				<li><a href="#contacts">контакты</a></li>
 			</ul>
 		</div>
 	</div>
 </div>
 <header class="header">
 	<div class="container">
-		<div class="header__desc-top">Создай свою сказку</div>
-		<div class="header__title">НОВОГОДНЕЕ ОФОРМЛЕНИЕ <br>загородных домов</div>
-		<div class="header__text">наши профессионалы используют самые качественные гирлянды</div>
+		<div class="header__desc-top"><span>Создай свою сказку</span></div>
+		<div class="header__title"><span>НОВОГОДНЕЕ ОФОРМЛЕНИЕ <br>загородных домов</span></div>
+		<div class="header__text"><span>наши профессионалы используют самые качественные гирлянды</span></div>
 		<div class="header__form form fz0">
-			<div class="form__title">закажите бесплатный замер</div>
+			<div class="form__title"><span>закажите бесплатный замер</span></div>
 			<input type="text" class="form__input input" placeholder="Ваше имя">
 			<input type="text" class="form__input input input_phone" placeholder="+7 (   )">
 			<button class="form__button button button_blue">Вызвать дизайнера</button>
 		</div>
-		<div class="header__desc-bottom">Украшаем за 1 день!</div>
+		<div class="header__desc-bottom"><span>Украшаем за 1 день!</span></div>
 	</div>
 </header>
 
@@ -93,30 +102,30 @@
 			<div class="what__desc">мы даем гарантию на наши гирлянды!</div>
 		</div>
 	</div>
-	<div class="portfolio">
+	<div class="portfolio" id="portfolio">
 		<div class="container">
-			<div class="portfolio__title">наши работы</div>
+			<div class="portfolio__title title">наши работы</div>
 		</div>
 		<div class="portfolio__list row_line">
-			<div class="portfolio__item"><img src="" alt=""></div>
-			<div class="portfolio__item"><img src="" alt=""></div>
-			<div class="portfolio__item"><img src="" alt=""></div>
-			<div class="portfolio__item"><img src="" alt=""></div>
-			<div class="portfolio__item"><img src="" alt=""></div>
-			<div class="portfolio__item"><img src="" alt=""></div>
-			<div class="portfolio__item"><img src="" alt=""></div>
-			<div class="portfolio__item"><img src="" alt=""></div>
+			<div class="portfolio__item col_line"><img src="upload/portfolio/1.png" alt=""></div>
+			<div class="portfolio__item col_line"><img src="upload/portfolio/2.png" alt=""></div>
+			<div class="portfolio__item col_line"><img src="upload/portfolio/3.png" alt=""></div>
+			<div class="portfolio__item col_line"><img src="upload/portfolio/4.png" alt=""></div>
+			<div class="portfolio__item col_line"><img src="upload/portfolio/4.png" alt=""></div>
+			<div class="portfolio__item col_line"><img src="upload/portfolio/1.png" alt=""></div>
+			<div class="portfolio__item col_line"><img src="upload/portfolio/2.png" alt=""></div>
+			<div class="portfolio__item col_line"><img src="upload/portfolio/3.png" alt=""></div>
 		</div>
 	</div>
-	<div class="share">
+	<div class="share" id="share">
 		<div class="container">
-			<div class="share__content">
+			<div class="share__content row">
 				<div class="share__left col">
-					<div class="share__desc">у нас самы низкие<span>ЦЕНЫ</span></div>
+					<div class="share__desc">у нас самые низкие <span>ЦЕНЫ</span></div>
 				</div>
 				<div class="share__right col">
-					<div class="share__title">закажите  дизайн прямо сейчас</div>
-					<div class="share__text">и получите скидку<span>50%</span>на монтажные работы</div>
+					<div class="share__title"><span>закажите  дизайн прямо сейчас</span></div>
+					<div class="share__text">и получите скидку <span>50%</span> <div>на монтажные работы</div></div>
 				</div>
 			</div>
 			<div class="share__form form fz0">
@@ -126,19 +135,19 @@
 			</div>
 		</div>
 	</div>
-	<div class="reviews">
+	<div class="reviews" id="reviews">
 		<div class="container">
 			<div class="reviews__title title">отзывы о нас</div>
 			<div class="reviews__list">
-				<div class="reviews__item">
-					<div class="reviews__image col"><img src="" alt=""></div>
+				<div class="reviews__item row">
+					<div class="reviews__image col"><img src="upload/man.png" alt=""></div>
 					<div class="reviews__content col">
 						<div class="reviews__text">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum nunc. Etiam pharetra, erat sed fermentum feugiat, velit mauris egestas quam, ut aliquam massa nisl quis neque. Suspendisse in orci enim.</div>
 						<div class="reviews__name">Фамилия имя</div>
 					</div>
 				</div>
 				<div class="reviews__item">
-					<div class="reviews__image col"><img src="" alt=""></div>
+					<div class="reviews__image col"><img src="upload/man.png" alt=""></div>
 					<div class="reviews__content col">
 						<div class="reviews__text">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum nunc. Etiam pharetra, erat sed fermentum feugiat, velit mauris egestas quam, ut aliquam massa nisl quis neque. Suspendisse in orci enim.</div>
 						<div class="reviews__name">Фамилия имя</div>
@@ -147,13 +156,13 @@
 			</div>
 		</div>
 	</div>
-	<div class="contacts">
-		<div class="contacts__map"></div>
+	<div class="contacts" id="contacts">
+		<div class="contacts__map"><script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A3e6be360d9de06fe9ff2ab79196abd70700d153faa2dc19ecc8e715cb18cf1de&amp;width=100%25&amp;height=635&amp;lang=ru_RU&amp;scroll=true"></script></div>
 		<div class="contacts__wrap">
-			<p>г. Москва, ул. Флотская, д.5  </p>
-			<div class="contacts__phone"><a href=""></a></div>
-			<a data-fancybox data-src="#popup-order" href="javascript:;" class="contacts__button"><img src="" alt=""><span>Заказать звонок</span></a>
-			<p>Мы работаем: <br>ежедневно с 9:00 до 21:00</p>
+			<p class="contacts__address">г. Москва, ул. Флотская, д.5</p>
+			<div class="contacts__phone"><a href="tel:+74993907275">+7-499-<span>390-72-75</span></a></div>
+			<a data-fancybox data-src="#popup-order" href="javascript:;" class="contacts__button button"><img src="upload/phone.png" alt=""><span>Заказать звонок</span></a>
+			<p class="contacts__time">Мы работаем: <br>ежедневно с 9:00 до 21:00</p>
 		</div>
 	</div>
 </main>

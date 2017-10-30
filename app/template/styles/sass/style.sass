@@ -1,6 +1,9 @@
 /* Including styles files */
 @import url('https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=cyrillic')
 @import url('https://fonts.googleapis.com/css?family=Lato:300,700')
+@import ../../libs/fancybox/dist/jquery.fancybox.css
+@import ../../libs/slick-carousel/slick/slick.css
+@import ../../libs/slick-carousel/slick/slick-theme.css
 
 
 /* Including fonts */
@@ -14,6 +17,7 @@
 /* Global settings */
 $font-size: 18px
 $font-family-1: 'PT Sans', sans-serif
+$font-family-2: 'Lato', sans-serif
 $color-1: #000
 
 
@@ -184,16 +188,18 @@ img
 		font-size: 31px
 		font-weight: 700
 		position: relative
-		top: -2px
+		top: 10px
 		margin-right: 20px
 		span
 			font-size: 42px
 	
 	&__phone, &__button
 		display: inline-block
-		vertical-align: middle
+		vertical-align: top
 	&__nav
 		margin-top: 25px
+		position: relative
+		z-index: 3
 		li
 			margin-right: 30px
 			text-transform: uppercase
@@ -225,6 +231,8 @@ img
 	color: white
 	font-size: 0
 	border-radius: 6px
+	&:hover
+		background: #800029
 	img
 		margin-right: 16px
 	span
@@ -240,8 +248,14 @@ img
 		background: #00c5f6
 		border-color: #005e71
 		box-shadow: inset 0 2px 3px rgba(0, 0, 0, 0.75)
+		&:hover
+			background: #005e71
+	&:hover
+		border-color: transparent
 
 .header
+	z-index: 2
+	position: relative
 	min-height: 945px
 	margin-top: -45px
 	padding-top: 210px
@@ -253,11 +267,35 @@ img
 			// text-shadow: 38px 66px 3.85px rgba(255, 255, 255, 0.75)
 			font-weight: 700
 			margin-bottom: 15px
+			position: relative
+			&:before
+				content: ''
+				position: absolute
+				background: url('../../img/shadows/1.png')
+				left: -42px
+				top: -32px
+				width: 582px
+				height: 129px
+			span
+				z-index: 2
+				position: relative
 		&-bottom
 			color: #f50342
 			font-size: 48px
 			font-weight: 700
 			margin-top: 30px
+			position: relative
+			&:before
+				content: ''
+				position: absolute
+				background: url('../../img/shadows/6.png')
+				width: 508px
+				height: 129px
+				left: -36px
+				top: -25px
+			span
+				z-index: 2
+				position: relative
 	&__title
 		font-size: 67px
 		font-weight: 700
@@ -265,20 +303,64 @@ img
 		text-transform: uppercase
 		color: #f50342
 		margin-bottom: 20px
+		position: relative
+		&:before
+			content: ''
+			position: absolute
+			background: url('../../img/shadows/2.png')
+			width: 972px
+			height: 173px
+			left: -61px
+			top: -40px
+		&:after
+			content: ''
+			position: absolute
+			background: url('../../img/shadows/3.png')
+			width: 779px
+			height: 173px
+			left: -61px
+			bottom: -45px
+		span
+			z-index: 2
+			position: relative
 	&__text
 		font-size: 30px
 		font-weight: 700
 		text-transform: uppercase
-	
+		position: relative
+		&:before
+			content: ''
+			position: absolute
+			background: url('../../img/shadows/4.png')
+			width: 1120px
+			height: 129px
+			left: -55px
+			top: -45px
+		span
+			z-index: 2
+			position: relative
+	&__form
+		margin-top: 110px
 
 .form
-	margin-top: 110px
 	&__title
 		font-size: 40px
 		color: #0f8e06
 		text-transform: uppercase
 		font-weight: 700
 		margin-bottom: 30px
+		position: relative
+		&:before
+			content: ''
+			position: absolute
+			background: url('../../img/shadows/5.png')
+			width: 720px
+			height: 129px
+			left: -60px
+			top: -37px
+		span
+			position: relative
+			z-index: 2
 	&__input
 		margin-right: 36px
 
@@ -291,9 +373,14 @@ img
 	font-weight: 700
 	position: relative
 	&:before
+		z-index: 1
 		content: ''
 		position: absolute
 		left: -191px
+		top: -45px
+		width: 178px
+		height: 178px
+		background: url('../../img/rounds.png') no-repeat center
 	&:after
 		content: ''
 		display: inline-block
@@ -309,6 +396,7 @@ img
 
 .what
 	padding-top: 25px
+	margin-bottom: 80px
 	&__title
 		margin-bottom: 50px
 	&__image
@@ -334,3 +422,222 @@ img
 		font-size: 24px
 		font-weight: 700
 		text-transform: uppercase
+		padding-left: 15px
+
+	&__desc
+		color: #00c5f6
+		font-size: 36px
+		font-weight: 700
+		text-transform: uppercase
+		text-align: center
+		margin-top: 50px
+		&:before, &:after
+			content: ''
+			display: inline-block
+			vertical-align: middle
+			width: 130px
+			height: 5px
+			background-color: #f50342
+			position: relative
+			top: -2px
+			margin-left: 20px
+			margin-right: 20px
+
+.portfolio
+	&__title
+		margin-bottom: 80px
+	&__list
+		position: relative
+		&:before, &:after
+			position: absolute
+			display: block
+			content: ''
+			width: 1100px
+			height: 33px
+			left: 50%
+			margin-left: -550px
+			background-color: #f50342
+		&:before
+			top: -33px
+		&:after
+			bottom: -33px
+	&__item
+		width: 25%
+		img
+			width: 100%
+
+
+.share
+	color: white
+	background: url('../../img/house.png') no-repeat center
+	padding-bottom: 90px
+	&__left
+		width: 370px
+		padding-top: 270px
+	&__right
+		float: right
+		width: 670px
+		padding-top: 71px
+		padding-right: 70px
+	&__desc
+		text-align: center
+		font-size: 35px
+		font-weight: 700
+		text-transform: uppercase
+		span
+			margin-top: 5px
+			display: block
+			font-size: 60px
+			background-color: #f50342
+			padding: 3.5px 0
+	&__title
+		position: relative
+		font-size: 36px
+		font-weight: 700
+		text-transform: uppercase
+		color: #f50342
+		margin-bottom: 18px
+		&:before
+			position: absolute
+			content: ''
+			width: 687px
+			height: 129px
+			left: -57px
+			top: -38px
+			background: url('../../img/shadows/7.png')
+		span
+			position: relative
+			z-index: 2
+	&__text
+		font-size: 51px
+		font-weight: 700
+		text-transform: uppercase
+		span
+			font-size: 183px
+			line-height: 150px
+			margin-left: -18px
+			margin-bottom: 10px
+		div
+			font-size: 30px
+			margin-left: -6px
+		span, div
+			display: block
+	&__form
+		margin-top: 75px
+
+
+.reviews
+	padding-top: 50px
+	padding-bottom: 60px
+	.container
+		background: url('../../img/quote.png') no-repeat 520px 25px
+	&__title
+		margin-bottom: 80px
+	&__item
+		padding-top: 30px
+		padding-bottom: 35px
+	&__image
+		padding-left: 30px
+		position: relative
+		&:before
+			position: absolute
+			content: ''
+			top: -29px
+			left: 0
+			background: url('../../img/dots.png')
+			width: 230px
+			height: 459px
+	&__content
+		width: 530px
+		margin-left: 80px
+		padding-top: 50px
+		font-family: $font-family-2
+
+	&__text
+		font-weight: 300
+
+	&__name
+		margin-top: 25px
+		font-weight: 700
+		text-transform: uppercase
+		font-size: 24px
+
+	.slick-prev
+		display: none
+	.slick-next
+		width: 70px
+		height: 145px
+		background-color: #00c5f6
+		top: 57%
+		right: 8px
+		transition: .3s
+		&:before
+			display: none
+		&:after
+			display: inline-block
+			content: ''
+			width: 18px
+			height: 69px
+			background: url('../../img/arrow.png')
+		&:hover
+			background-color: lighten(#00c5f6, 10%)
+
+
+.contacts
+	position: relative
+	a
+		color: white
+	&__wrap
+		color: white
+		top: 145px
+		right: 50%
+		margin-right: -570px
+		position: absolute
+		padding: 70px 72px 35px
+		text-align: center
+		background: url('../../img/contacts.png') no-repeat center
+	&__address
+		font-size: 24px
+		font-weight: 300
+		letter-spacing: -0.6px
+		margin-bottom: 40px
+	&__phone
+		font-size: 31px
+		font-weight: 700
+		margin-bottom: 14px
+		span
+			font-size: 42px
+	&__time
+		margin-top: 20px
+		font-size: 22px
+		letter-spacing: -0.55px
+		line-height: 30px
+
+
+.footer
+	text-align: center
+	font-weight: 700
+	font-family: $font-family-2
+	color: white
+	background-color: #010101
+	padding-top: 36px
+	padding-bottom: 36px
+
+
+.popup
+	display: none
+	border-radius: 20px
+	&__title
+		text-align: center
+		font-size: 35px
+		margin-bottom: 20px
+	.input
+		margin-right: 0
+		margin-bottom: 20px
+	.input, .button
+		display: block
+		margin-left: auto
+		margin-right: auto
+	.button
+		border-bottom: none
+		width: 100%
