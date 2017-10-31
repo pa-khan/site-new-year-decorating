@@ -69,6 +69,8 @@
 		
 
 	.reviews
+		&__title
+			margin-bottom: 20px
 		&__image
 			padding-left: 0
 			width: 250px
@@ -88,6 +90,8 @@
 
 		.slick-next
 			top: 47%
+		
+
 
 	.contacts
 		&__wrap
@@ -96,3 +100,223 @@
 	.popup
 		.input
 			width: 100%
+
+@media screen and (max-width: 965px)
+	.container
+		width: 100%
+	.input
+		line-height: 45px
+		font-size: 16px
+	.button
+		line-height: 50px
+		font-size: 20px
+	.panel
+		text-align: center
+		&__logo, &__contacts
+			float: none
+		&__logo img, &__phone, &__button
+			display: block
+			width: 280px
+			margin-left: auto
+			margin-right: auto
+		&__phone
+			top: 0
+			margin-top: 15px
+			margin-bottom: 15px
+		&__nav
+			margin-top: 15px
+			li
+				display: block
+				margin-bottom: 10px
+				margin-right: 0
+			a
+				&:after
+					display: none
+	.header
+		background-size: 300%
+		background-position: center
+		margin-top: 20px
+		padding-top: 20px
+		padding-bottom: 30px
+		position: relative
+		text-align: center
+		min-height: 1px
+		color: white
+		&:after
+			content: ''
+			position: absolute
+			width: 100%
+			height: 100%
+			left: 0
+			top: 0
+			background: rgba(0,0,0,.3)
+		&__desc-top, &__title, &__text, &__desc-bottom, .form__title
+			&:before
+				display: none
+		&__title
+			&:after
+				display: none
+		&__desc-top
+			font-size: 30px
+		&__title
+			font-size: 40px
+			line-height: normal
+		&__text
+			font-size: 30px
+		&__form
+			margin-top: 40px
+		&__desc-bottom
+			margin-top: 10px
+			font-size: 40px
+	.form
+		position: relative
+		z-index: 2
+		&__title
+			font-size: 32px
+			color: #000
+			margin-bottom: 15px
+			color: white
+		&__input
+			margin-right: auto
+			margin-left: auto
+			margin-bottom: 10px
+		&__input, &__button
+			display: block
+			width: 280px
+	.header, .share
+		overflow: inherit
+
+	.what
+		margin-bottom: 35px
+		&__title
+			margin-bottom: 20px
+		&__item
+			width: 300px
+			margin-bottom: 30px
+		&__image
+			margin-bottom: 10px
+			&:before
+				display: none
+		&__text
+			font-size: 18px
+		&__desc
+			margin-top: 10px
+			&:before, &:after
+				display: none
+	.title
+		text-align: center
+		&:after
+			display: block
+			margin-left: auto
+			margin-right: auto
+			margin-top: 20px
+	.portfolio
+		&__title
+			margin-bottom: 50px
+	.share
+		&__left, &__right
+			float: none
+			width: 100%
+			max-width: 280px
+			margin-left: auto
+			margin-right: auto
+		&__left
+			padding-top: 50px
+		&__right
+			padding-top: 20px
+			text-align: center
+		&__title
+			font-size: 30px
+			&:before
+				display: none
+		&__text
+			font-size: 30px
+			span
+				font-size: 72px
+				line-height: normal
+	.reviews
+		padding-top: 25px
+		padding-bottom: 5px
+		&__title
+			margin-bottom: 0
+		&__image, &__content
+			float: none
+		.container
+			background: none
+		&__image
+			margin-left: auto
+			margin-right: auto
+			width: 230px
+			img
+				max-width: 100%
+		&__item
+			padding-right: 15px
+			padding-left: 15px
+		&__content
+			margin-left: auto
+			margin-right: auto
+			max-width: 530px
+			width: 100%
+			text-align: center
+		.slick-arrow
+			display: block !important
+			width: auto
+			height: auto
+			border-radius: 50%
+			top: 50%
+			background: none !important
+			&:before
+				display: inline-block
+				color: #f50342
+				opacity: 1
+				font-size: 26px
+			&:after
+				display: none
+		.slick-prev
+			left: -13px
+		.slick-next
+			right: -13px
+	.contacts
+		&__wrap
+			position: static
+			margin-left: auto
+			margin-right: auto
+			width: 100%
+			background-size: cover
+			padding: 20px 10px
+		&__address
+			margin-bottom: 10px
+@media screen and (max-width: 767px)
+	.portfolio
+		&__item
+			width: 50%
+@media screen and (max-width: 610px)
+	.header
+		background-size: 500%
+
+@media screen and (max-width: 435px)
+	.header
+		background-size: 700%
+	.what
+		&__item
+			width: 100%
+@media screen and (max-width: 400px)
+	.popup
+		width: 95%
+		&__title
+			font-size: 30px
+
+@media screen and (max-width: 360px)
+	.header
+		background-size: 900%
+	.portfolio
+		&__item
+			width: 100%
+
+	.contacts
+		&__phone
+			span
+				font-size: inherit
+		&__button
+			width: 280px
+			

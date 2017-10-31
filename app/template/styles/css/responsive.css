@@ -57,6 +57,8 @@
       width: 590px; }
     .share__form {
       margin-top: 30px; }
+  .reviews__title {
+    margin-bottom: 20px; }
   .reviews__image {
     padding-left: 0;
     width: 250px;
@@ -77,3 +79,213 @@
     margin-right: -440px; }
   .popup .input {
     width: 100%; } }
+
+@media screen and (max-width: 965px) {
+  .container {
+    width: 100%; }
+  .input {
+    line-height: 45px;
+    font-size: 16px; }
+  .button {
+    line-height: 50px;
+    font-size: 20px; }
+  .panel {
+    text-align: center; }
+    .panel__logo, .panel__contacts {
+      float: none; }
+    .panel__logo img, .panel__phone, .panel__button {
+      display: block;
+      width: 280px;
+      margin-left: auto;
+      margin-right: auto; }
+    .panel__phone {
+      top: 0;
+      margin-top: 15px;
+      margin-bottom: 15px; }
+    .panel__nav {
+      margin-top: 15px; }
+      .panel__nav li {
+        display: block;
+        margin-bottom: 10px;
+        margin-right: 0; }
+      .panel__nav a:after {
+        display: none; }
+  .header {
+    background-size: 300%;
+    background-position: center;
+    margin-top: 20px;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    position: relative;
+    text-align: center;
+    min-height: 1px;
+    color: white; }
+    .header:after {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      left: 0;
+      top: 0;
+      background: rgba(0, 0, 0, 0.3); }
+    .header__desc-top:before, .header__title:before, .header__text:before, .header__desc-bottom:before, .header .form__title:before {
+      display: none; }
+    .header__title:after {
+      display: none; }
+    .header__desc-top {
+      font-size: 30px; }
+    .header__title {
+      font-size: 40px;
+      line-height: normal; }
+    .header__text {
+      font-size: 30px; }
+    .header__form {
+      margin-top: 40px; }
+    .header__desc-bottom {
+      margin-top: 10px;
+      font-size: 40px; }
+  .form {
+    position: relative;
+    z-index: 2; }
+    .form__title {
+      font-size: 32px;
+      color: #000;
+      margin-bottom: 15px;
+      color: white; }
+    .form__input {
+      margin-right: auto;
+      margin-left: auto;
+      margin-bottom: 10px; }
+    .form__input, .form__button {
+      display: block;
+      width: 280px; }
+  .header, .share {
+    overflow: inherit; }
+  .what {
+    margin-bottom: 35px; }
+    .what__title {
+      margin-bottom: 20px; }
+    .what__item {
+      width: 300px;
+      margin-bottom: 30px; }
+    .what__image {
+      margin-bottom: 10px; }
+      .what__image:before {
+        display: none; }
+    .what__text {
+      font-size: 18px; }
+    .what__desc {
+      margin-top: 10px; }
+      .what__desc:before, .what__desc:after {
+        display: none; }
+  .title {
+    text-align: center; }
+    .title:after {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 20px; }
+  .portfolio__title {
+    margin-bottom: 50px; }
+  .share__left, .share__right {
+    float: none;
+    width: 100%;
+    max-width: 280px;
+    margin-left: auto;
+    margin-right: auto; }
+  .share__left {
+    padding-top: 50px; }
+  .share__right {
+    padding-top: 20px;
+    text-align: center; }
+  .share__title {
+    font-size: 30px; }
+    .share__title:before {
+      display: none; }
+  .share__text {
+    font-size: 30px; }
+    .share__text span {
+      font-size: 72px;
+      line-height: normal; }
+  .reviews {
+    padding-top: 25px;
+    padding-bottom: 5px; }
+    .reviews__title {
+      margin-bottom: 0; }
+    .reviews__image, .reviews__content {
+      float: none; }
+    .reviews .container {
+      background: none; }
+    .reviews__image {
+      margin-left: auto;
+      margin-right: auto;
+      width: 230px; }
+      .reviews__image img {
+        max-width: 100%; }
+    .reviews__item {
+      padding-right: 15px;
+      padding-left: 15px; }
+    .reviews__content {
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 530px;
+      width: 100%;
+      text-align: center; }
+    .reviews .slick-arrow {
+      display: block !important;
+      width: auto;
+      height: auto;
+      -webkit-border-radius: 50%;
+              border-radius: 50%;
+      top: 50%;
+      background: none !important; }
+      .reviews .slick-arrow:before {
+        display: inline-block;
+        color: #f50342;
+        opacity: 1;
+        font-size: 26px; }
+      .reviews .slick-arrow:after {
+        display: none; }
+    .reviews .slick-prev {
+      left: -13px; }
+    .reviews .slick-next {
+      right: -13px; }
+  .contacts__wrap {
+    position: static;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    background-size: cover;
+    padding: 20px 10px; }
+  .contacts__address {
+    margin-bottom: 10px; } }
+
+@media screen and (max-width: 767px) {
+  .portfolio__item {
+    width: 50%; } }
+
+@media screen and (max-width: 610px) {
+  .header {
+    background-size: 500%; } }
+
+@media screen and (max-width: 435px) {
+  .header {
+    background-size: 700%; }
+  .what__item {
+    width: 100%; } }
+
+@media screen and (max-width: 400px) {
+  .popup {
+    width: 95%; }
+    .popup__title {
+      font-size: 30px; } }
+
+@media screen and (max-width: 360px) {
+  .header {
+    background-size: 900%; }
+  .portfolio__item {
+    width: 100%; }
+  .contacts__phone span {
+    font-size: inherit; }
+  .contacts__button {
+    width: 280px; } }
